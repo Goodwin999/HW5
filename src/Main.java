@@ -22,6 +22,8 @@ public class Main {
             System.out.println("Установите приложение для Android ");
         } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке» ");
+        } else {
+            System.out.println("Купите телефон ");
         }
 
 
