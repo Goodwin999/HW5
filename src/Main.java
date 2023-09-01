@@ -6,7 +6,7 @@ public class Main {
         int clientOS = 1;
         if (clientOS == 1) {
             System.out.println("Установите приложение для IOS ");
-        } else if (clientOS == 0){
+        } else if (clientOS == 0) {
             System.out.println("Установите приложение для Android ");
         }
 
@@ -16,12 +16,16 @@ public class Main {
         int clientDeviceYear = 2015;
         if (clientIos == 0) {
             System.out.println("Установите приложение для IOS");
-        } else if (clientDeviceYear < 2015) {
+        } else if (clientIos == 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке ");
+        } else if (clientDeviceYear > 2015) {
+            System.out.println("Установите приложение для IOS ");
         } else if (clientAndroid == 1) {
             System.out.println("Установите приложение для Android ");
-        } else if (clientDeviceYear < 2015) {
+        } else if (clientAndroid == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке» ");
+        } else if (clientDeviceYear > 2015) {
+            System.out.println("Установите приложение для Android ");
         } else {
             System.out.println("Купите телефон ");
         }
