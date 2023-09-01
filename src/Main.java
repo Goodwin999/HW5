@@ -11,14 +11,14 @@ public class Main {
         }
 
 
-        int ios = 0;
-        int android = 1;
+        int clientIos = 0;
+        int clientAndroid = 1;
         int clientDeviceYear = 2015;
-        if (ios < android) {
+        if (clientIos == 0) {
             System.out.println("Установите приложение для IOS");
         } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке ");
-        } else if (ios > android) {
+        } else if (clientAndroid == 1) {
             System.out.println("Установите приложение для Android ");
         } else if (clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке» ");
