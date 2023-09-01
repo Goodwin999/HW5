@@ -57,6 +57,7 @@ public class Main {
 
         int monthNumber = 12;
         switch (monthNumber) {
+            case 12:
             case 1:
             case 2:
                 System.out.println("Зима");
@@ -76,10 +77,8 @@ public class Main {
             case 11:
                 System.out.println("Осень");
                 break;
-            case 12:
-                System.out.println("Начало зимы");
-                break;
-            default:System.out.println("Такого месяца не существует");
+            default:
+                System.out.println("Такого месяца не существует");
 
         }
 
