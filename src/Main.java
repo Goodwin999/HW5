@@ -4,9 +4,9 @@ public class Main {
 
 
         int clientOS = 1;
-        if (clientOS < 1) {
+        if (clientOS == 1) {
             System.out.println("Установите приложение для IOS ");
-        } else {
+        } else if (clientOS == 0){
             System.out.println("Установите приложение для Android ");
         }
 
