@@ -31,21 +31,12 @@ public class Main {
         }
 
 
-        int year = 2021;
-        switch (year) {
-            case 2012:
-            case 2016:
-            case 2020:
-            case 2024:
-                System.out.println("Год  является високосным ");
-                break;
-            case 2021:
-            case 2022:
-            case 2023:
-                System.out.println("Год не является високосным ");
-                break;
-            default:
-                System.out.println("Такого года не существеует ");
+        int year = 100;
+
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            System.out.println(year + " год является високосным");
+        } else {
+            System.out.println(year + " год НЕ является високосным");
         }
 
 
