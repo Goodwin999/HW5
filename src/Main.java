@@ -30,12 +30,13 @@ public class Main {
         }
 
 
-        int year = 100;
-
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
-            System.out.println(year + " год является високосным");
+        int year = 2021;
+        boolean leapYear = (year > 1584 && ((year % 400 == 0) ||
+                (year % 4 == 0 && year % 100 != 0)));
+        if (leapYear) {
+            System.out.println("Год " + year + " високосный");
         } else {
-            System.out.println(year + " год НЕ является високосным");
+            System.out.println("Год " + year + " не високосный");
         }
 
 
