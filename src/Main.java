@@ -12,7 +12,6 @@ public class Main {
 
 
         int clientIos = 0;
-        int clientAndroid = 1;
         int clientDeviceYear = 2015;
         if (clientIos == 0) {
             System.out.println("Установите приложение для IOS");
@@ -20,9 +19,9 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке ");
         } else if (clientDeviceYear > 2015) {
             System.out.println("Установите приложение для IOS ");
-        } else if (clientAndroid == 1) {
+        } else if (clientIos == 1) {
             System.out.println("Установите приложение для Android ");
-        } else if (clientAndroid == 1 && clientDeviceYear < 2015) {
+        } else if (clientIos == 1 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке» ");
         } else if (clientDeviceYear > 2015) {
             System.out.println("Установите приложение для Android ");
